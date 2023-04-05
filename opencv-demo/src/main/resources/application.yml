@@ -1,0 +1,26 @@
+server:
+    port: 8082
+
+
+
+#spring:
+#  datasource:
+#    url: jdbc:mysql://47.99.72.68:3306/vueadmin?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    username: DavidNan
+#    password: 123456
+#--------------mqtt配置------------------------
+# 默认接受消息的主题---指定多个主题[物联网主题、对话主题-聊天室]
+mqtt:
+    receiver:
+        defaultTopic: receive_iot_topic/#,receive_chat_topic/#
+        # mqtt接收者的id-随机id
+        clientId: ${random.value}
+    sender:
+        # 默认发送消息的主题
+        defaultTopic: test_send
+        # mqtt发送者的id
+        clientId: mqttProducer
+    url: tcp://www.qzwxixi.cn:1883
+    username: admin
+    password: qinzhiwei123
