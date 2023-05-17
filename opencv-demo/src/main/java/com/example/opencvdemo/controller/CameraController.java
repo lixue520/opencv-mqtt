@@ -61,7 +61,7 @@ public class CameraController {
         payload.setDeviceid("0号机");
         payload.setLevel((float) 0.01);
 
-        mqttSender.sendToMqtt("smartwater/upload/image",gson.toJson(payload));//
+        mqttSender.sendToMqtt("smartwater/sub",gson.toJson(payload));//
         logger.info("Image uploaded successfully");
         return new ResponseEntity<>("Image uploaded successfully", HttpStatus.OK);
     }

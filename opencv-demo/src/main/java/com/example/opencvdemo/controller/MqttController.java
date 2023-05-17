@@ -46,7 +46,7 @@ public class MqttController {
 
 
     /**
-     * 127.0.0.1:8081/mqtt/control_command
+     * 127.0.0.1:8082/mqtt/control_command
      * post、json
      * {
      *   "createtime": "2023-04-01T07:02:23.707Z",
